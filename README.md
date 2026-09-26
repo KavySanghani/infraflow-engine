@@ -6,6 +6,8 @@
 
 InfraFlow turns a project's facts (department, type, cost, jurisdiction, site status) into a **dependency-graph workflow** by evaluating a **versioned rule registry**. Approvals are routed to a **position, not a person**, by an **authority resolver that refuses to guess**. A **blocker engine** shows the root cause of delay and how many steps it holds back. Construction progress, inspections, evidence and issues feed back into the same graph, and an **advisory AI Copilot** explains everything with rule citations. Every business action is audited.
 
+🚀 Live Demo: [https://infraflow-engine-web.vercel.app](https://www.google.com/search?q=https://infraflow-engine-web.vercel.app&utm_source=gemini) 🔑 Demo Credentials: admin@demo.infraflow.local / Demo@12345 ☁️ Deployment Stack: Vercel (Frontend), Render (Fastify API), Neon (PostgreSQL)
+
 - Repository: https://github.com/KavySanghani/infraflow-engine
 
 > **Technical prototype.** The rule registry is pending departmental and legal review. The only monetary delegation thresholds in the system are a **synthetic demo matrix**, labelled as such everywhere. The real R&B department deliberately has no delegation configured, so its approvals show "manual review required" instead of a guessed answer.
