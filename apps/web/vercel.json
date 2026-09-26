@@ -1,0 +1,8 @@
+{
+  "rewrites": [
+    {
+      "source": "/api/:match*",
+      "destination": "https://infraflow-engine.onrender.com/api/:match*"
+    }
+  ]
+}
