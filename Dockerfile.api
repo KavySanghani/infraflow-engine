@@ -11,8 +11,7 @@ COPY package.json package-lock.json ./
 COPY apps/api/package.json apps/api/
 COPY apps/web/package.json apps/web/
 COPY packages/shared/package.json packages/shared/
-RUN npm ci --workspace=@infraflow/api --workspace=@infraflow/shared \
- && npm cache clean --force
+RUN npm install && npm install -g tsx && npm cache clean --force
 
 COPY tsconfig.base.json ./
 COPY packages/shared packages/shared
