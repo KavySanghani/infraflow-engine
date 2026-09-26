@@ -1,11 +1,12 @@
 # InfraFlow
 
+**Developed by [Kavy Sanghani](https://github.com/KavySanghani)**
+
 **A source-backed, rule-driven workflow and monitoring platform for Gujarat public-works building projects.**
 
 InfraFlow turns a project's facts (department, type, cost, jurisdiction, site status) into a **dependency-graph workflow** by evaluating a **versioned rule registry**. Approvals are routed to a **position, not a person**, by an **authority resolver that refuses to guess**. A **blocker engine** shows the root cause of delay and how many steps it holds back. Construction progress, inspections, evidence and issues feed back into the same graph, and an **advisory AI Copilot** explains everything with rule citations. Every business action is audited.
 
-- Live demo: https://infroflow.chatapp.sbs (synthetic data only, persona buttons on the login page)
-- Repository: https://github.com/aaryashah1010/infraflow-engine
+- Repository: https://github.com/KavySanghani/infraflow-engine
 
 > **Technical prototype.** The rule registry is pending departmental and legal review. The only monetary delegation thresholds in the system are a **synthetic demo matrix**, labelled as such everywhere. The real R&B department deliberately has no delegation configured, so its approvals show "manual review required" instead of a guessed answer.
 
@@ -323,7 +324,7 @@ They are created by `scripts/seed-scenarios.ts` through the real services on a b
 ### Steps
 
 ```bash
-git clone https://github.com/aaryashah1010/infraflow-engine.git
+git clone https://github.com/KavySanghani/infraflow-engine.git
 cd infraflow-engine
 
 npm install
@@ -521,7 +522,7 @@ Set `WEB_BIND=0.0.0.0` and `WEB_PORT=80` if you want the container to serve the 
 1. **DNS.** Add an `A` record for a subdomain to the server's public IPv4. Put only the subdomain in the Name field. Confirm with `nslookup <sub>.<domain> ns1.<your-dns-provider>` before continuing.
 2. **Get the code and configure.**
    ```bash
-   git clone https://github.com/aaryashah1010/infraflow-engine.git && cd infraflow-engine
+   git clone https://github.com/KavySanghani/infraflow-engine.git && cd infraflow-engine
    docker compose version || curl -fsSL https://get.docker.com | sh
    ss -ltn | grep 8088                    # should print nothing; otherwise set WEB_PORT
    echo "JWT_SECRET=$(openssl rand -hex 32)" > .env
